@@ -22,7 +22,7 @@ def prompt_user_for_preferences():
     
     for desc, chars in char_types.items():
         choice = input(f"Do you want to include {desc}? (yes/no or y/n): ").strip().lower()
-        if choice in ['yes', 'y']:  # Added 'y' and 'yes' as valid responses
+        if choice in ['yes', 'y']:
             selected_char_types += chars
 
     if not selected_char_types:
